@@ -1,0 +1,1126 @@
+root@localhost:~/libhybris/libhybris/hybris/tests# ./test_egl
+Segmentation fault
+root@localhost:~/libhybris/libhybris/hybris/tests# ./test_egl_config
+bash: ./test_egl_config: No such file or directory
+root@localhost:~/libhybris/libhybris/hybris/tests# ./test_egl_configs
+Starting test (EGL_PLATFORM=(null))
+Segmentation fault
+root@localhost:~/libhybris/libhybris/hybris/tests# strace ./test_egl_configs
+execve("./test_egl_configs", ["./test_egl_configs"], [/* 34 vars */]) = 0
+brk(NULL)                               = 0x2a0000
+uname({sysname="Linux", nodename="localhost", ...}) = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6fc7000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFREG|0644, st_size=35185, ...}) = 0
+mmap2(NULL, 35185, PROT_READ, MAP_PRIVATE, 4, 0) = 0xb6fbe000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\260\\\0\0004\0\0\0"..., 512) = 512
+lseek(4, 103608, SEEK_SET)              = 103608
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1080) = 1080
+lseek(4, 103256, SEEK_SET)              = 103256
+read(4, "A0\0\0\0aeabi\0\1&\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 49) = 49
+fstat64(4, {st_mode=S_IFREG|0644, st_size=104688, ...}) = 0
+mmap2(NULL, 169920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6f79000
+mprotect(0xb6f91000, 61440, PROT_NONE)  = 0
+mmap2(0xb6fa0000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x17000) = 0xb6fa0000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libdl.so.2", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0`\t\0\0004\0\0\0"..., 512) = 512
+lseek(4, 8652, SEEK_SET)                = 8652
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(4, 8328, SEEK_SET)                = 8328
+read(4, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 51) = 51
+fstat64(4, {st_mode=S_IFREG|0644, st_size=9772, ...}) = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6fbd000
+mmap2(NULL, 73912, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6f66000
+mprotect(0xb6f68000, 61440, PROT_NONE)  = 0
+mmap2(0xb6f77000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1000) = 0xb6f77000close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\3\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\331i\1\0004\0\0\0"..., 512) = 512
+lseek(4, 894132, SEEK_SET)              = 894132
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 2960) = 2960
+lseek(4, 888324, SEEK_SET)              = 888324
+read(4, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\3\f"..., 51) = 51
+fstat64(4, {st_mode=S_IFREG|0755, st_size=897092, ...}) = 0
+mmap2(NULL, 963968, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6e7a000
+mprotect(0xb6f50000, 65536, PROT_NONE)  = 0
+mmap2(0xb6f60000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xd6000) = 0xb6f60000
+mmap2(0xb6f63000, 9600, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6f63000
+close(4)                                = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6fbc000
+set_tls(0xb6fbc4c0, 0xb6fbcb98, 0xb6fcb050, 0xb6fbc4c0, 0xb6fcb050) = 0
+mprotect(0xb6f60000, 8192, PROT_READ)   = 0
+mprotect(0xb6f77000, 4096, PROT_READ)   = 0
+mprotect(0xb6fa0000, 8192, PROT_READ)   = 0
+mprotect(0xc0000, 4096, PROT_READ)      = 0
+mprotect(0xb6fca000, 4096, PROT_READ)   = 0
+munmap(0xb6fbe000, 35185)               = 0
+open("/dev/tty", O_RDWR|O_NONBLOCK|O_LARGEFILE) = 4
+close(4)                                = 0
+brk(NULL)                               = 0x2a0000
+brk(0x2a1000)                           = 0x2a1000
+brk(0x2a2000)                           = 0x2a2000
+getuid32()                              = 0
+getgid32()                              = 0
+geteuid32()                             = 0
+getegid32()                             = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+gettimeofday({1553886358, 801946}, NULL) = 0
+brk(0x2a3000)                           = 0x2a3000
+brk(0x2a4000)                           = 0x2a4000
+sysinfo({uptime=62160, loads=[814592, 807488, 847360], totalram=1436446720, freeram=67158016, sharedram=0, bufferram=16859136, totalswap=1073737728, freeswap=530391040, procs=1514, totalhigh=888143872, freehigh=28844032, mem_unit=1}) = 0
+brk(0x2a5000)                           = 0x2a5000
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0xb6e9f251}, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+uname({sysname="Linux", nodename="localhost", ...}) = 0
+brk(0x2a6000)                           = 0x2a6000
+brk(0x2a7000)                           = 0x2a7000
+brk(0x2a8000)                           = 0x2a8000
+stat64("/root/libhybris/libhybris/hybris/tests", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat64(".", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getpid()                                = 10095
+getppid()                               = 10093
+gettimeofday({1553886358, 811655}, NULL) = 0
+brk(0x2a9000)                           = 0x2a9000
+getpgrp()                               = 10093
+rt_sigaction(SIGCHLD, {0x472a9, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, 8) = 0
+ugetrlimit(RLIMIT_NPROC, {rlim_cur=9314, rlim_max=9314}) = 0
+brk(0x2aa000)                           = 0x2aa000
+brk(0x2ab000)                           = 0x2ab000
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+open("./test_egl_configs", O_RDONLY|O_LARGEFILE) = 4
+ioctl(4, TCGETS, 0xbe8f3d64)            = -1 ENOTTY (Inappropriate ioctl for device)
+_llseek(4, 0, [0], SEEK_CUR)            = 0
+read(4, "#! /bin/bash\n\n# test_egl_configs"..., 80) = 80
+_llseek(4, 0, [0], SEEK_SET)            = 0
+ugetrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=4*1024}) = 0
+fcntl64(255, F_GETFD)                   = -1 EBADF (Bad file descriptor)
+dup2(4, 255)                            = 255
+close(4)                                = 0
+fcntl64(255, F_SETFD, FD_CLOEXEC)       = 0
+fcntl64(255, F_GETFL)                   = 0x20000 (flags O_RDONLY|O_LARGEFILE)
+fstat64(255, {st_mode=S_IFREG|0755, st_size=7955, ...}) = 0
+_llseek(255, 0, [0], SEEK_CUR)          = 0
+brk(0x2ad000)                           = 0x2ad000
+brk(0x2ae000)                           = 0x2ae000
+read(255, "#! /bin/bash\n\n# test_egl_configs"..., 7955) = 7955
+pipe([4, 5])                            = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+_llseek(255, -7023, [932], SEEK_CUR)    = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xb6fbc068) = 10096
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGCHLD, {0x472a9, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, {0x472a9, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, 8) = 0
+close(5)                                = 0
+read(4, "allexport      \toff\n", 128)  = 20
+read(4, "braceexpand    \ton\n", 128)   = 19
+read(4, "emacs          \toff\n", 128)  = 20
+read(4, "errexit        \toff\n", 128)  = 20
+read(4, "errtrace       \toff\n", 128)  = 20
+read(4, "functrace      \toff\n", 128)  = 20
+read(4, "hashall        \ton\n", 128)   = 19
+read(4, "histexpand     \toff\n", 128)  = 20
+read(4, "history        \toff\n", 128)  = 20
+read(4, "ignoreeof      \toff\n", 128)  = 20
+read(4, "interactive-comments\ton\n", 128) = 24
+read(4, "keyword        \toff\n", 128)  = 20
+read(4, "monitor        \toff\n", 128)  = 20
+read(4, "noclobber      \toff\n", 128)  = 20
+read(4, "noexec         \toff\n", 128)  = 20
+read(4, "noglob         \toff\n", 128)  = 20
+read(4, "nolog          \toff\n", 128)  = 20
+read(4, "notify         \toff\n", 128)  = 20
+read(4, "nounset        \toff\n", 128)  = 20
+read(4, "onecmd         \toff\n", 128)  = 20
+brk(0x2af000)                           = 0x2af000
+read(4, "physical       \toff\n", 128)  = 20
+read(4, "pipefail       \toff\n", 128)  = 20
+read(4, "posix          \toff\n", 128)  = 20
+read(4, "privileged     \toff\n", 128)  = 20
+read(4, "verbose        \toff\n", 128)  = 20
+read(4, "vi             \toff\n", 128)  = 20
+read(4, "xtrace         \toff\n", 128)  = 20
+read(4, "", 128)                        = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10096, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 10096
+wait4(-1, 0xbe8f36cc, WNOHANG, NULL)    = -1 ECHILD (No child processes)
+sigreturn({mask=[]})                    = 0
+close(4)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGINT, {0x44e9d, [], SA_RESTORER, 0xb6e9f251}, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, {0x44e9d, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+read(255, "BIN_SH=xpg4; export BIN_SH # for"..., 7955) = 7023
+rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [INT CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [INT CHLD], NULL, 8) = 0
+_llseek(255, -6806, [1149], SEEK_CUR)   = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xb6fbc068) = 10107
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGINT, {0x44e9d, [], SA_RESTORER, 0xb6e9f251}, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 10107
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, {0x44e9d, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10107, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, 0xbe8f36dc, WNOHANG, NULL)    = -1 ECHILD (No child processes)
+sigreturn({mask=[]})                    = 0
+read(255, "\nrelink_command=\"(cd /root/libhy"..., 7955) = 6806
+brk(0x2b0000)                           = 0x2b0000
+brk(0x2b1000)                           = 0x2b1000
+brk(0x2b2000)                           = 0x2b2000
+brk(0x2b3000)                           = 0x2b3000
+brk(0x2b4000)                           = 0x2b4000
+brk(0x2b5000)                           = 0x2b5000
+brk(0x2b6000)                           = 0x2b6000
+brk(0x2b7000)                           = 0x2b7000
+brk(0x2b8000)                           = 0x2b8000
+brk(0x2b9000)                           = 0x2b9000
+brk(0x2ba000)                           = 0x2ba000
+brk(0x2bb000)                           = 0x2bb000
+brk(0x2bc000)                           = 0x2bc000
+brk(0x2bd000)                           = 0x2bd000
+brk(0x2be000)                           = 0x2be000
+brk(0x2bf000)                           = 0x2bf000
+brk(0x2c0000)                           = 0x2c0000
+pipe([4, 5])                            = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xb6fbc068) = 10114
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGCHLD, {0x472a9, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, {0x472a9, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, 8) = 0
+close(5)                                = 0
+read(4, ".\n", 128)                     = 2
+read(4, "", 128)                        = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10114, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 10114
+wait4(-1, 0xbe8f2ac4, WNOHANG, NULL)    = -1 ECHILD (No child processes)
+sigreturn({mask=[]})                    = 0
+close(4)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGINT, {0x44e9d, [], SA_RESTORER, 0xb6e9f251}, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, {0x44e9d, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+pipe([4, 5])                            = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xb6fbc068) = 10117
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGCHLD, {0x472a9, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, {0x472a9, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, 8) = 0
+close(5)                                = 0
+read(4, "", 128)                        = 0
+close(4)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGINT, {0x44e9d, [], SA_RESTORER, 0xb6e9f251}, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 10117
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, {0x44e9d, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10117, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xbe8f2ac4, WNOHANG, NULL)    = -1 ECHILD (No child processes)
+sigreturn({mask=[]})                    = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+pipe([4, 5])                            = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xb6fbc068) = 10120
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGCHLD, {0x472a9, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, {0x472a9, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, 8) = 0
+close(5)                                = 0
+read(4, "/root/libhybris/libhybris/hybris"..., 128) = 39
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10120, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 10120
+wait4(-1, 0xbe8f3004, WNOHANG, NULL)    = -1 ECHILD (No child processes)
+sigreturn({mask=[]})                    = 39
+read(4, "", 128)                        = 0
+close(4)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGINT, {0x44e9d, [], SA_RESTORER, 0xb6e9f251}, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, {0x44e9d, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+stat64("/root/libhybris/libhybris/hybris/tests/.libs/lt-test_egl_configs", {st_mode=S_IFREG|0755, st_size=28316, ...}) = 0
+pipe([4, 5])                            = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xb6fbc068) = 10121
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGCHLD, {0x472a9, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, {0x472a9, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, 8) = 0
+close(5)                                = 0
+read(4, "/root/libhybris/libhybris/hybris"..., 128) = 65
+read(4, "", 128)                        = 0
+close(4)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGINT, {0x44e9d, [], SA_RESTORER, 0xb6e9f251}, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 10121
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, {0x44e9d, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10121, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xbe8f2e5c, WNOHANG, NULL)    = -1 ECHILD (No child processes)
+sigreturn({mask=[]})                    = 0
+stat64("/root/libhybris/libhybris/hybris/tests/.libs/lt-test_egl_configs", {st_mode=S_IFREG|0755, st_size=28316, ...}) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0xb6e9f251}, {SIG_IGN, [], SA_RESTORER, 0xb6e9f251}, 8) = 0
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, {0x472a9, [], SA_RESTORER|SA_RESTART, 0xb6e9f251}, 8) = 0
+execve("/root/libhybris/libhybris/hybris/tests/.libs/lt-test_egl_configs", ["/root/libhybris/libhybris/hybris"...], [/* 33 vars */]) = 0
+brk(NULL)                               = 0xb59000
+uname({sysname="Linux", nodename="localhost", ...}) = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6fba000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/tls/v7l/neon/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/tls/v7l/neon/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/tls/v7l/neon/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/tls/v7l/neon", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/tls/v7l/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/tls/v7l/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/tls/v7l/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/tls/v7l", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/tls/neon/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/tls/neon/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/tls/neon/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/tls/neon", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/tls/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/tls/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/tls/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/tls", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/v7l/neon/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/v7l/neon/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/v7l/neon/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/v7l/neon", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/v7l/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/v7l/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/v7l/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/v7l", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/neon/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/neon/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/neon/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/neon", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/common/.libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/root/libhybris/libhybris/hybris/egl/.libs/tls/v7l/neon/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/tls/v7l/neon/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/tls/v7l/neon/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/tls/v7l/neon", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/tls/v7l/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/tls/v7l/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/tls/v7l/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/tls/v7l", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/tls/neon/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/tls/neon/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/tls/neon/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/tls/neon", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/tls/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/tls/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/tls/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/tls", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/v7l/neon/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/v7l/neon/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/v7l/neon/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/v7l/neon", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/v7l/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/v7l/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/v7l/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/v7l", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/neon/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/neon/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/neon/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/neon", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/vfp/libEGL.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/egl/.libs/vfp", 0xbe818970) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/libEGL.so.1", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\27\0\0004\0\0\0"..., 512) = 512
+lseek(4, 101736, SEEK_SET)              = 101736
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1440) = 1440
+lseek(4, 16676, SEEK_SET)               = 16676
+read(4, "A0\0\0\0aeabi\0\1&\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 49) = 49
+fstat64(4, {st_mode=S_IFREG|0755, st_size=103176, ...}) = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6fb9000
+mmap2(NULL, 82760, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6f81000
+mprotect(0xb6f85000, 61440, PROT_NONE)  = 0
+mmap2(0xb6f94000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x3000) = 0xb6f94000close(4)                                = 0
+open("/root/libhybris/libhybris/hybris/common/.libs/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFREG|0644, st_size=35185, ...}) = 0
+mmap2(NULL, 35185, PROT_READ, MAP_PRIVATE, 4, 0) = 0xb6fb0000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\3\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\215F\0\0004\0\0\0"..., 512) = 512
+lseek(4, 108304, SEEK_SET)              = 108304
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1640) = 1640
+lseek(4, 70048, SEEK_SET)               = 70048
+read(4, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 51) = 51
+fstat64(4, {st_mode=S_IFREG|0755, st_size=109944, ...}) = 0
+mmap2(NULL, 143940, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6f5d000
+mprotect(0xb6f6e000, 61440, PROT_NONE)  = 0
+mmap2(0xb6f7d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x10000) = 0xb6f7d000
+mmap2(0xb6f7f000, 4676, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6f7f000
+close(4)                                = 0
+open("/root/libhybris/libhybris/hybris/common/.libs/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\3\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\331i\1\0004\0\0\0"..., 512) = 512
+lseek(4, 894132, SEEK_SET)              = 894132
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 2960) = 2960
+lseek(4, 888324, SEEK_SET)              = 888324
+read(4, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\3\f"..., 51) = 51
+fstat64(4, {st_mode=S_IFREG|0755, st_size=897092, ...}) = 0
+mmap2(NULL, 963968, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6e71000
+mprotect(0xb6f47000, 65536, PROT_NONE)  = 0
+mmap2(0xb6f57000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xd6000) = 0xb6f57000
+mmap2(0xb6f5a000, 9600, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6f5a000
+close(4)                                = 0
+open("/root/libhybris/libhybris/hybris/common/.libs/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/tls/v7l/neon/vfp/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/tls/v7l/neon/vfp", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/tls/v7l/neon/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/tls/v7l/neon", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/tls/v7l/vfp/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/tls/v7l/vfp", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/tls/v7l/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/tls/v7l", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/tls/neon/vfp/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/tls/neon/vfp", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/tls/neon/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/tls/neon", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/tls/vfp/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/tls/vfp", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/tls/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/tls", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/v7l/neon/vfp/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/v7l/neon/vfp", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/v7l/neon/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/v7l/neon", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/v7l/vfp/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/v7l/vfp", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/v7l/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/v7l", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/neon/vfp/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/neon/vfp", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/neon/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/neon", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/vfp/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs/vfp", 0xbe818878) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat64("/root/libhybris/libhybris/hybris/hardware/.libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/root/libhybris/libhybris/hybris/common/.libs/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libdl.so.2", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0`\t\0\0004\0\0\0"..., 512) = 512
+lseek(4, 8652, SEEK_SET)                = 8652
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(4, 8328, SEEK_SET)                = 8328
+read(4, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 51) = 51
+fstat64(4, {st_mode=S_IFREG|0644, st_size=9772, ...}) = 0
+mmap2(NULL, 73912, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6e5e000
+mprotect(0xb6e60000, 61440, PROT_NONE)  = 0
+mmap2(0xb6e6f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1000) = 0xb6e6f000close(4)                                = 0
+open("/root/libhybris/libhybris/hybris/common/.libs/libhybris-common.so.1", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\340m\0\0004\0\0\0"..., 512) = 512
+lseek(4, 238676, SEEK_SET)              = 238676
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1440) = 1440
+lseek(4, 58392, SEEK_SET)               = 58392
+read(4, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 51) = 51
+fstat64(4, {st_mode=S_IFREG|0755, st_size=240116, ...}) = 0
+mmap2(NULL, 132584, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6e3d000
+mprotect(0xb6e4a000, 61440, PROT_NONE)  = 0
+mmap2(0xb6e59000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xc000) = 0xb6e59000
+mmap2(0xb6e5c000, 5608, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6e5c000
+close(4)                                = 0
+open("/root/libhybris/libhybris/hybris/common/.libs/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabihf/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\3\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\300\305\6\0004\0\0\0"..., 512) = 512
+lseek(4, 1030780, SEEK_SET)             = 1030780
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1280) = 1280
+lseek(4, 1030204, SEEK_SET)             = 1030204
+read(4, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 51) = 51
+fstat64(4, {st_mode=S_IFREG|0644, st_size=1032060, ...}) = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6faf000
+mmap2(NULL, 1104008, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6d2f000
+mprotect(0xb6e25000, 61440, PROT_NONE)  = 0
+mmap2(0xb6e34000, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xf5000) = 0xb6e34000
+mmap2(0xb6e3b000, 6280, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6e3b000
+close(4)                                = 0
+open("/root/libhybris/libhybris/hybris/common/.libs/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\230\321\0\0004\0\0\0"..., 512) = 512
+lseek(4, 98252, SEEK_SET)               = 98252
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(4, 97920, SEEK_SET)               = 97920
+read(4, "A0\0\0\0aeabi\0\1&\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 49) = 49
+fstat64(4, {st_mode=S_IFREG|0644, st_size=99372, ...}) = 0
+mmap2(NULL, 163512, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6d07000
+mprotect(0xb6d1f000, 61440, PROT_NONE)  = 0
+mmap2(0xb6d2e000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x17000) = 0xb6d2e000
+close(4)                                = 0
+open("/root/libhybris/libhybris/hybris/common/.libs/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/librt.so.1", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\3\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0000\27\0\0004\0\0\0"..., 512) = 512
+lseek(4, 21228, SEEK_SET)               = 21228
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1280) = 1280
+lseek(4, 20844, SEEK_SET)               = 20844
+read(4, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 51) = 51
+fstat64(4, {st_mode=S_IFREG|0644, st_size=22508, ...}) = 0
+mmap2(NULL, 86544, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6cf1000
+mprotect(0xb6cf6000, 61440, PROT_NONE)  = 0
+mmap2(0xb6d05000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x4000) = 0xb6d05000close(4)                                = 0
+open("/root/libhybris/libhybris/hybris/common/.libs/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/hardware/.libs/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/common/.libs/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libm.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0X<\0\0004\0\0\0"..., 512) = 512
+lseek(4, 423356, SEEK_SET)              = 423356
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1200) = 1200
+lseek(4, 422004, SEEK_SET)              = 422004
+read(4, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 51) = 51
+fstat64(4, {st_mode=S_IFREG|0644, st_size=424556, ...}) = 0
+mmap2(NULL, 487548, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6c79000
+mprotect(0xb6ce0000, 61440, PROT_NONE)  = 0
+mmap2(0xb6cef000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x66000) = 0xb6cef000
+close(4)                                = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6fae000
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6c78000
+set_tls(0xb6c784c0, 0xb6c78bf8, 0xb6fbe050, 0xb6c784c0, 0xb6fbe050) = 0
+mprotect(0xb6f57000, 8192, PROT_READ)   = 0
+mprotect(0xb6cef000, 4096, PROT_READ)   = 0
+mprotect(0xb6f7d000, 4096, PROT_READ)   = 0
+mprotect(0xb6d05000, 4096, PROT_READ)   = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6c77000
+mprotect(0xb6e34000, 20480, PROT_READ)  = 0
+mprotect(0xb6e6f000, 4096, PROT_READ)   = 0
+mprotect(0xb6e59000, 4096, PROT_READ)   = 0
+mprotect(0xb6f94000, 4096, PROT_READ)   = 0
+mprotect(0x21000, 4096, PROT_READ)      = 0
+mprotect(0xb6fbd000, 4096, PROT_READ)   = 0
+munmap(0xb6fb0000, 35185)               = 0
+set_tid_address(0xb6c78068)             = 10095
+set_robust_list(0xb6c78070, 12)         = 0
+rt_sigaction(SIGRTMIN, {0xb6f611e5, [], SA_RESTORER|SA_SIGINFO, 0xb6e96261}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0xb6f61285, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0xb6e96261}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+ugetrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM_INFINITY}) = 0
+brk(NULL)                               = 0xb59000
+brk(0xb7e000)                           = 0xb7e000
+write(2, "Starting test (EGL_PLATFORM=(nul"..., 36Starting test (EGL_PLATFORM=(null))
+) = 36
+socket(PF_LOCAL, SOCK_STREAM, 0)        = 4
+connect(4, {sa_family=AF_LOCAL, sun_path="/dev/socket/property_service"}, 31) = 0
+send(4, "\2\0\0\0ro.build.version.sdk\0\0\0\0\0\0\0\0"..., 128, 0) = 128
+recv(4, "", 128, 0)                     = 0
+close(4)                                = 0
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+read(4, "\n# begin build properties\n# auto"..., 4096) = 4096
+read(4, "gefright.enable-player=true\nmedi"..., 4096) = 3422
+read(4, "", 4096)                       = 0
+open("/proc/cmdline", O_RDONLY)         = 5
+read(5, "console=null androidboot.console"..., 1023) = 954
+close(5)                                = 0
+sysinfo({uptime=62160, loads=[814592, 807488, 847360], totalram=1436446720, freeram=65302528, sharedram=0, bufferram=16859136, totalswap=1073737728, freeswap=530432000, procs=1529, totalhigh=888143872, freehigh=27525120, mem_unit=1}) = 0
+close(4)                                = 0
+futex(0xb6e700ac, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open("/usr/local/lib/libhybris/linker/jb.so", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0H\22\0\0004\0\0\0"..., 512) = 512
+lseek(4, 93148, SEEK_SET)               = 93148
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1480) = 1480
+lseek(4, 25396, SEEK_SET)               = 25396
+read(4, "A0\0\0\0aeabi\0\1&\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 49) = 49
+fstat64(4, {st_mode=S_IFREG|0755, st_size=94628, ...}) = 0
+mmap2(NULL, 136404, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6c55000
+mprotect(0xb6c5a000, 65536, PROT_NONE)  = 0
+mmap2(0xb6c6a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x5000) = 0xb6c6a000mmap2(0xb6c6c000, 42196, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6c6c000
+close(4)                                = 0
+mprotect(0xb6c6a000, 4096, PROT_READ)   = 0
+stat64("/vendor/lib/libEGL.so", 0xbe818b10) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libEGL.so", {st_mode=S_IFREG|0644, st_size=143944, ...}) = 0
+open("/system/lib/libEGL.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\324<\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 143936
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 184320, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6c28000
+mmap2(0xb6c28000, 105128, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6c28000
+mprotect(0xb6c28000, 106496, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6c51000, 4768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x19000) = 0xb6c51000
+mmap2(0xb6c53000, 7692, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6c53000
+close(4)                                = 0
+stat64("/vendor/lib/liblog.so", 0xbe818a60) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/liblog.so", {st_mode=S_IFREG|0644, st_size=17596, ...}) = 0
+open("/system/lib/liblog.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 17588
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 24576, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6fb3000
+mmap2(0xb6fb3000, 15176, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6fb3000
+mprotect(0xb6fb3000, 16384, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6fb7000, 4124, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x3000) = 0xb6fb7000
+close(4)                                = 0
+stat64("/vendor/lib/libc.so", 0xbe8189b0) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libc.so", {st_mode=S_IFREG|0644, st_size=592769, ...}) = 0
+open("/system/lib/libc.so", O_RDONLY)   = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 592761
+read(4, "RelBase\0", 8)                 = 8
+mmap2(NULL, 466944, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6bb6000
+mmap2(0xb6bb6000, 400828, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6bb6000
+mprotect(0xb6bb6000, 401408, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6c19000, 21808, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x62000) = 0xb6c19000
+mmap2(0xb6c1f000, 36862, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6c1f000
+close(4)                                = 0
+mprotect(0xb6bb6000, 401408, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6c19000, 12288, PROT_READ)  = 0
+stat64("/vendor/lib/libm.so", 0xbe8189b0) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libm.so", {st_mode=S_IFREG|0644, st_size=91344, ...}) = 0
+open("/system/lib/libm.so", O_RDONLY)   = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 91336
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 98304, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6b9e000
+mmap2(0xb6b9e000, 88380, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6b9e000
+mprotect(0xb6b9e000, 90112, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6bb4000, 4204, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x15000) = 0xb6bb4000
+close(4)                                = 0
+mprotect(0xb6b9e000, 90112, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6bb4000, 4096, PROT_READ)   = 0
+stat64("/vendor/lib/libstdc++.so", 0xbe8189b0) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libstdc++.so", {st_mode=S_IFREG|0644, st_size=9320, ...}) = 0
+open("/system/lib/libstdc++.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 9312
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 16384, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6b9a000
+mmap2(0xb6b9a000, 5254, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6b9a000
+mprotect(0xb6b9a000, 8192, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6b9c000, 4100, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x1000) = 0xb6b9c000
+close(4)                                = 0
+mprotect(0xb6b9a000, 8192, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6b9c000, 4096, PROT_READ)   = 0
+mprotect(0xb6fb3000, 16384, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6fb7000, 4096, PROT_READ)   = 0
+mprotect(0xb6c28000, 106496, PROT_READ|PROT_EXEC) = 0
+stat64("/system/lib/libEGL_orig.so", {st_mode=S_IFREG|0644, st_size=428192, ...}) = 0
+open("/system/lib/libEGL_orig.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 428184
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 446464, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6b2d000
+mmap2(0xb6b2d000, 384926, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6b2d000
+mprotect(0xb6b2d000, 385024, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6b8c000, 41880, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x5e000) = 0xb6b8c000
+mmap2(0xb6b97000, 9124, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6b97000
+close(4)                                = 0
+stat64("/vendor/lib/libGLES_trace.so", 0xbe818a00) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libGLES_trace.so", {st_mode=S_IFREG|0644, st_size=435332, ...}) = 0
+open("/system/lib/libGLES_trace.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 435324
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 438272, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6ac2000
+mmap2(0xb6ac2000, 428248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6ac2000
+mprotect(0xb6ac2000, 430080, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6b2b000, 8060, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x68000) = 0xb6b2b000
+close(4)                                = 0
+stat64("/vendor/lib/libcutils.so", 0xbe818950) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libcutils.so", {st_mode=S_IFREG|0644, st_size=46424, ...}) = 0
+open("/system/lib/libcutils.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 46416
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 53248, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6ab5000
+mmap2(0xb6ab5000, 42696, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6ab5000
+mprotect(0xb6ab5000, 45056, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6ac0000, 4176, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0xa000) = 0xb6ac0000
+close(4)                                = 0
+mprotect(0xb6ab5000, 45056, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6ac0000, 4096, PROT_READ)   = 0
+stat64("/vendor/lib/libstlport.so", 0xbe818950) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libstlport.so", {st_mode=S_IFREG|0644, st_size=214352, ...}) = 0
+open("/system/lib/libstlport.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 214344
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 221184, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6a7f000
+mmap2(0xb6a7f000, 206662, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6a7f000
+mprotect(0xb6a7f000, 208896, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6ab2000, 8264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x32000) = 0xb6ab2000
+close(4)                                = 0
+mprotect(0xb6a7f000, 208896, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6ab2000, 8192, PROT_READ)   = 0
+stat64("/vendor/lib/libutils.so", 0xbe818950) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libutils.so", {st_mode=S_IFREG|0644, st_size=83168, ...}) = 0
+open("/system/lib/libutils.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 83160
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 90112, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6a69000
+mmap2(0xb6a69000, 78016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6a69000
+mprotect(0xb6a69000, 81920, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6a7d000, 4116, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x13000) = 0xb6a7d000
+close(4)                                = 0
+stat64("/vendor/lib/libbacktrace.so", 0xbe8188a0) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libbacktrace.so", {st_mode=S_IFREG|0644, st_size=25756, ...}) = 0
+open("/system/lib/libbacktrace.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 25748
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 32768, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6a61000
+mmap2(0xb6a61000, 21597, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6a61000
+mprotect(0xb6a61000, 24576, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6a67000, 4100, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x5000) = 0xb6a67000
+close(4)                                = 0
+stat64("/vendor/lib/libgccdemangle.so", 0xbe8187f0) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libgccdemangle.so", {st_mode=S_IFREG|0644, st_size=21620, ...}) = 0
+open("/system/lib/libgccdemangle.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 21612
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 28672, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6a5a000
+mmap2(0xb6a5a000, 14931, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6a5a000
+mprotect(0xb6a5a000, 16384, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6a5f000, 4100, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x4000) = 0xb6a5f000
+close(4)                                = 0
+mprotect(0xb6a5a000, 16384, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6a5f000, 4096, PROT_READ)   = 0
+stat64("/vendor/lib/libunwind.so", 0xbe8187f0) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libunwind.so", {st_mode=S_IFREG|0644, st_size=50356, ...}) = 0
+open("/system/lib/libunwind.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 50348
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 344064, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6a06000
+mmap2(0xb6a06000, 46396, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6a06000
+mprotect(0xb6a06000, 49152, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6a12000, 4116, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0xb000) = 0xb6a12000
+mmap2(0xb6a14000, 285012, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6a14000
+close(4)                                = 0
+mprotect(0xb6a06000, 49152, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6a12000, 4096, PROT_READ)   = 0
+stat64("/vendor/lib/libunwind-ptrace.so", 0xbe8187f0) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libunwind-ptrace.so", {st_mode=S_IFREG|0644, st_size=9256, ...}) = 0
+open("/system/lib/libunwind-ptrace.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 9248
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 16384, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6a02000
+mmap2(0xb6a02000, 4540, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6a02000
+mprotect(0xb6a02000, 8192, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6a04000, 4132, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x1000) = 0xb6a04000
+close(4)                                = 0
+mprotect(0xb6a02000, 8192, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6a04000, 4096, PROT_READ)   = 0
+mprotect(0xb6a61000, 24576, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6a67000, 4096, PROT_READ)   = 0
+mprotect(0xb6a69000, 81920, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6a7d000, 4096, PROT_READ)   = 0
+mprotect(0xb6ac2000, 430080, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6b2b000, 4096, PROT_READ)   = 0
+mprotect(0xb6b2d000, 385024, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6b8c000, 8192, PROT_READ)   = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6fb2000
+madvise(0xb6fb2000, 4096, MADV_MERGEABLE) = -1 EINVAL (Invalid argument)
+mprotect(0xb6fb2000, 4096, PROT_READ)   = 0
+mprotect(0xb6fb2000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0xb6fb2000, 4096, PROT_READ)   = 0
+mprotect(0xb6fb2000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0xb6fb2000, 4096, PROT_READ)   = 0
+mprotect(0xb6fb2000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0xb6fb2000, 4096, PROT_READ)   = 0
+fcntl64(0, F_GETFL)                     = 0x20002 (flags O_RDWR|O_LARGEFILE)
+fstat64(0, {st_mode=S_IFCHR|0600, st_rdev=makedev(136, 10), ...}) = 0
+fcntl64(0, F_GETFL)                     = 0x20002 (flags O_RDWR|O_LARGEFILE)
+fstat64(0, {st_mode=S_IFCHR|0600, st_rdev=makedev(136, 10), ...}) = 0
+fcntl64(0, F_GETFL)                     = 0x20002 (flags O_RDWR|O_LARGEFILE)
+fstat64(0, {st_mode=S_IFCHR|0600, st_rdev=makedev(136, 10), ...}) = 0
+fcntl64(0, F_GETFL)                     = 0x20002 (flags O_RDWR|O_LARGEFILE)
+fstat64(0, {st_mode=S_IFCHR|0600, st_rdev=makedev(136, 10), ...}) = 0
+mprotect(0xb6fb2000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0xb6fb2000, 4096, PROT_READ)   = 0
+mprotect(0xb6fb2000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0xb6fb2000, 4096, PROT_READ)   = 0
+mprotect(0xb6fb2000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0xb6fb2000, 4096, PROT_READ)   = 0
+futex(0xb6b2cfa4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+mprotect(0xb6fb2000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0xb6fb2000, 4096, PROT_READ)   = 0
+mprotect(0xb6fb2000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0xb6fb2000, 4096, PROT_READ)   = 0
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+futex(0xb6b983ec, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+mprotect(0xb6fb2000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0xb6fb2000, 4096, PROT_READ)   = 0
+mprotect(0xb6fb2000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0xb6fb2000, 4096, PROT_READ)   = 0
+stat64("/vendor/lib/libGLESv2.so", 0xbe818b10) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libGLESv2.so", {st_mode=S_IFREG|0644, st_size=3833988, ...}) = 0
+open("/system/lib/libGLESv2.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\234\204\1\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 3833980
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 1196032, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb68de000
+mmap2(0xb68de000, 1059684, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb68de000
+mprotect(0xb68de000, 1060864, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb69f0000, 42956, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x102000) = 0xb69f0000
+mmap2(0xb69fb000, 27656, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb69fb000
+close(4)                                = 0
+mprotect(0xb68de000, 1060864, PROT_READ|PROT_EXEC) = 0
+stat64("/system/lib/libGLESv2_orig.so", {st_mode=S_IFREG|0644, st_size=46088, ...}) = 0
+open("/system/lib/libGLESv2_orig.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 46080
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 53248, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb68d1000
+mmap2(0xb68d1000, 40993, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb68d1000
+mprotect(0xb68d1000, 45056, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb68dc000, 4100, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0xa000) = 0xb68dc000
+close(4)                                = 0
+mprotect(0xb68d1000, 45056, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb68dc000, 4096, PROT_READ)   = 0
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+access("/vendor/lib/egl/libGLES.so", R_OK) = -1 ENOENT (No such file or directory)
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+access("/system/lib/egl/libGLES.so", R_OK) = -1 ENOENT (No such file or directory)
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+open("/vendor/lib/egl", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents(4, /* 7 entries */, 32768)     = 192
+getdents(4, /* 0 entries */, 32768)     = 0
+close(4)                                = 0
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+open("/system/lib/egl", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents(4, /* 3 entries */, 32768)     = 52
+getdents(4, /* 0 entries */, 32768)     = 0
+close(4)                                = 0
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+access("/vendor/lib/egl/libEGL.so", R_OK) = -1 ENOENT (No such file or directory)
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+access("/system/lib/egl/libEGL.so", R_OK) = -1 ENOENT (No such file or directory)
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+open("/vendor/lib/egl", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents(4, /* 7 entries */, 32768)     = 192
+close(4)                                = 0
+stat64("/vendor/lib/egl/libEGL_adreno.so", {st_mode=S_IFREG|0644, st_size=161904, ...}) = 0
+open("/vendor/lib/egl/libEGL_adreno.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 161896
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 167936, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb68a8000
+mmap2(0xb68a8000, 156468, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb68a8000
+mprotect(0xb68a8000, 159744, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb68cf000, 4888, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x26000) = 0xb68cf000
+close(4)                                = 0
+stat64("/vendor/lib/libadreno_utils.so", {st_mode=S_IFREG|0644, st_size=9404, ...}) = 0
+open("/vendor/lib/libadreno_utils.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 9396
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 20480, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb68a3000
+mmap2(0xb68a3000, 6580, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb68a3000
+mprotect(0xb68a3000, 8192, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb68a5000, 4104, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x1000) = 0xb68a5000
+mmap2(0xb68a7000, 3720, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb68a7000
+close(4)                                = 0
+stat64("/vendor/lib/libgsl.so", {st_mode=S_IFREG|0644, st_size=154928, ...}) = 0
+open("/vendor/lib/libgsl.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 154920
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 163840, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb687b000
+mmap2(0xb687b000, 147288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb687b000
+mprotect(0xb687b000, 147456, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb68a0000, 6276, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x24000) = 0xb68a0000
+mmap2(0xb68a2000, 1544, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb68a2000
+close(4)                                = 0
+stat64("/vendor/lib/libz.so", 0xbe818890) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libz.so", {st_mode=S_IFREG|0644, st_size=95500, ...}) = 0
+open("/system/lib/libz.so", O_RDONLY)   = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 95492
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 102400, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6862000
+mmap2(0xb6862000, 93304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6862000
+mprotect(0xb6862000, 94208, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6879000, 4160, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x16000) = 0xb6879000
+close(4)                                = 0
+mprotect(0xb6862000, 94208, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6879000, 4096, PROT_READ)   = 0
+mprotect(0xb687b000, 147456, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb68a0000, 4096, PROT_READ)   = 0
+mprotect(0xb68a3000, 8192, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb68a5000, 4096, PROT_READ)   = 0
+stat64("/vendor/lib/libcrypto.so", 0xbe8189f0) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libcrypto.so", {st_mode=S_IFREG|0644, st_size=1312696, ...}) = 0
+open("/system/lib/libcrypto.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 1312688
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 1327104, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb671e000
+mmap2(0xb671e000, 1226252, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb671e000
+mprotect(0xb671e000, 1228800, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb684a000, 86664, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x12b000) = 0xb684a000
+mmap2(0xb6860000, 7288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6860000
+close(4)                                = 0
+mprotect(0xb671e000, 1228800, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb684a000, 57344, PROT_READ)  = 0
+stat64("/vendor/lib/libhardware.so", 0xbe8189f0) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libhardware.so", {st_mode=S_IFREG|0644, st_size=5236, ...}) = 0
+open("/system/lib/libhardware.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 5228
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 12288, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb671b000
+mmap2(0xb671b000, 2481, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb671b000
+mprotect(0xb671b000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb671c000, 4100, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb671c000
+close(4)                                = 0
+mprotect(0xb671b000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb671c000, 4096, PROT_READ)   = 0
+mprotect(0xb68a8000, 159744, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb68cf000, 4096, PROT_READ)   = 0
+readlinkat(AT_FDCWD, "/proc/self/exe", "/root/libhybris/libhybris/hybris"..., 1023) = 64
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+gettimeofday({1553886359, 78308}, NULL) = 0
+open("/dev/urandom", O_RDONLY|O_NOCTTY|O_NONBLOCK) = 4
+fstat64(4, {st_mode=S_IFCHR|0666, st_rdev=makedev(1, 9), ...}) = 0
+ppoll([{fd=4, events=POLLIN}], 1, {0, 10000000}, NULL, 0) = 1 ([{fd=4, revents=POLLIN}], left {0, 9995834})
+read(4, "5p(N\336\30\352\207\302I\17U\32t\250\222\331v\265\21\274\35n\205q3\242\25\300W\202T", 32) = 32
+close(4)                                = 0
+getuid32()                              = 0
+gettimeofday({1553886359, 80064}, NULL) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP INT QUIT ABRT KILL USR1 USR2 PIPE ALRM TERM STKFLT CHLD CONT STOP TSTP TTIN TTOU URG XCPU XFSZ VTALRM PROF WINCH IO PWR SYS RTMIN], [], 8) = 0
+sigaction(SIGILL, {0xb67d5565, ~[ILL TRAP BUS FPE SEGV], 0}, {SIG_DFL, [], 0}) = 0
+rt_sigprocmask(SIG_BLOCK, [], [HUP INT QUIT ABRT USR1 USR2 PIPE ALRM TERM STKFLT CHLD CONT TSTP TTIN TTOU URG XCPU XFSZ VTALRM PROF WINCH IO PWR SYS RTMIN], 8) = 0
+--- SIGILL {si_signo=SIGILL, si_code=ILL_ILLOPC, si_addr=0xb6763b88} ---
+rt_sigprocmask(SIG_SETMASK, [HUP INT QUIT ABRT USR1 USR2 PIPE ALRM TERM STKFLT CHLD CONT TSTP TTIN TTOU URG XCPU XFSZ VTALRM PROF WINCH IO PWR SYS RTMIN], [HUP INT QUIT ILL ABRT USR1 USR2 PIPE ALRM TERM STKFLT CHLD CONT TSTP TTIN TTOU URG XCPU XFSZ VTALRM PROF WINCH IO PWR SYS RTMIN], 8) = 0
+sigaction(SIGILL, {SIG_DFL, [], 0}, NULL) = 0
+rt_sigprocmask(SIG_SETMASK, [], [HUP INT QUIT ABRT USR1 USR2 PIPE ALRM TERM STKFLT CHLD CONT TSTP TTIN TTOU URG XCPU XFSZ VTALRM PROF WINCH IO PWR SYS RTMIN], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP INT QUIT ABRT KILL USR1 USR2 PIPE ALRM TERM STKFLT CHLD CONT STOP TSTP TTIN TTOU URG XCPU XFSZ VTALRM PROF WINCH IO PWR SYS RTMIN], [], 8) = 0
+sigaction(SIGILL, {0xb67fff20, ~[ILL TRAP BUS FPE SEGV], 0}, {SIG_DFL, [], 0}) = 0
+rt_sigprocmask(SIG_BLOCK, [], [HUP INT QUIT ABRT USR1 USR2 PIPE ALRM TERM STKFLT CHLD CONT TSTP TTIN TTOU URG XCPU XFSZ VTALRM PROF WINCH IO PWR SYS RTMIN], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [], [HUP INT QUIT ABRT USR1 USR2 PIPE ALRM TERM STKFLT CHLD CONT TSTP TTIN TTOU URG XCPU XFSZ VTALRM PROF WINCH IO PWR SYS RTMIN], 8) = 0
+--- SIGILL {si_signo=SIGILL, si_code=ILL_ILLOPC, si_addr=0xb67fff48} ---
+rt_sigprocmask(SIG_SETMASK, [HUP INT QUIT ABRT USR1 USR2 PIPE ALRM TERM STKFLT CHLD CONT TSTP TTIN TTOU URG XCPU XFSZ VTALRM PROF WINCH IO PWR SYS RTMIN], [HUP INT QUIT ILL ABRT USR1 USR2 PIPE ALRM TERM STKFLT CHLD CONT TSTP TTIN TTOU URG XCPU XFSZ VTALRM PROF WINCH IO PWR SYS RTMIN], 8) = 0
+sigaction(SIGILL, {SIG_DFL, [], 0}, NULL) = 0
+rt_sigprocmask(SIG_SETMASK, [], [HUP INT QUIT ABRT USR1 USR2 PIPE ALRM TERM STKFLT CHLD CONT TSTP TTIN TTOU URG XCPU XFSZ VTALRM PROF WINCH IO PWR SYS RTMIN], 8) = 0
+open("/dev/alog/main", O_WRONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/dev/alog/radio", O_WRONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/dev/alog/events", O_WRONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/dev/alog/system", O_WRONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+close(-1)                               = -1 EBADF (Bad file descriptor)
+close(-1)                               = -1 EBADF (Bad file descriptor)
+close(-1)                               = -1 EBADF (Bad file descriptor)
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+access("/vendor/lib/egl/libGLESv1_CM.so", R_OK) = -1 ENOENT (No such file or directory)
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+access("/system/lib/egl/libGLESv1_CM.so", R_OK) = -1 ENOENT (No such file or directory)
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+open("/vendor/lib/egl", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents(4, /* 7 entries */, 32768)     = 192
+close(4)                                = 0
+stat64("/vendor/lib/egl/libGLESv1_CM_adreno.so", {st_mode=S_IFREG|0644, st_size=206232, ...}) = 0
+open("/vendor/lib/egl/libGLESv1_CM_adreno.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 206224
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 212992, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb66e7000
+mmap2(0xb66e7000, 198611, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb66e7000
+mprotect(0xb66e7000, 200704, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6719000, 4156, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x31000) = 0xb6719000
+close(4)                                = 0
+mprotect(0xb66e7000, 200704, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6719000, 4096, PROT_READ)   = 0
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+access("/vendor/lib/egl/libGLESv2.so", R_OK) = -1 ENOENT (No such file or directory)
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+access("/system/lib/egl/libGLESv2.so", R_OK) = -1 ENOENT (No such file or directory)
+open("/system/build.prop", O_RDONLY)    = 4
+fstat64(4, {st_mode=S_IFREG|0600, st_size=7518, ...}) = 0
+close(4)                                = 0
+open("/vendor/lib/egl", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents(4, /* 7 entries */, 32768)     = 192
+close(4)                                = 0
+stat64("/vendor/lib/egl/libGLESv2_adreno.so", {st_mode=S_IFREG|0644, st_size=1280448, ...}) = 0
+open("/vendor/lib/egl/libGLESv2_adreno.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 1280440
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 1290240, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb65ac000
+mmap2(0xb65ac000, 1064721, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb65ac000
+mprotect(0xb65ac000, 1064960, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb66b1000, 214172, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x104000) = 0xb66b1000
+mmap2(0xb66e6000, 1386, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb66e6000
+close(4)                                = 0
+mprotect(0xb65ac000, 1064960, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb66b1000, 8192, PROT_READ)   = 0
+stat64("/system/lib/libGLESv1_CM.so", {st_mode=S_IFREG|0644, st_size=159080, ...}) = 0
+open("/system/lib/libGLESv1_CM.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\350S\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 159072
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 167936, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6583000
+mmap2(0xb6583000, 95648, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb6583000
+mprotect(0xb6583000, 98304, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb65aa000, 5284, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x17000) = 0xb65aa000
+close(4)                                = 0
+mprotect(0xb6583000, 98304, PROT_READ|PROT_EXEC) = 0
+stat64("/system/lib/libGLESv1_CM_orig.so", {st_mode=S_IFREG|0644, st_size=25608, ...}) = 0
+open("/system/lib/libGLESv1_CM_orig.so", O_RDONLY) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 4096) = 4096
+lseek(4, -8, SEEK_END)                  = 25600
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap2(NULL, 32768, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb657b000
+mmap2(0xb657b000, 20980, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0xb657b000
+mprotect(0xb657b000, 24576, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xb6581000, 4100, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x5000) = 0xb6581000
+close(4)                                = 0
+mprotect(0xb657b000, 24576, PROT_READ|PROT_EXEC) = 0
+mprotect(0xb6581000, 4096, PROT_READ)   = 0
+open("/usr/local/lib/libhybris/eglplatform_null.so", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\234\6\0\0004\0\0\0"..., 512) = 512
+lseek(4, 12608, SEEK_SET)               = 12608
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1400) = 1400
+lseek(4, 4260, SEEK_SET)                = 4260
+read(4, "A0\0\0\0aeabi\0\1&\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 49) = 49
+fstat64(4, {st_mode=S_IFREG|0755, st_size=14008, ...}) = 0
+mmap2(NULL, 69756, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6569000
+mprotect(0xb656a000, 61440, PROT_NONE)  = 0
+mmap2(0xb6579000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0) = 0xb6579000
+close(4)                                = 0
+open("/root/libhybris/libhybris/hybris/common/.libs/libhybris-eglplatformcommon.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/libhybris-eglplatformcommon.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat64(4, {st_mode=S_IFREG|0644, st_size=35185, ...}) = 0
+mmap2(NULL, 35185, PROT_READ, MAP_PRIVATE, 4, 0) = 0xb6560000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/libhybris-eglplatformcommon.so.1", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\314\34\0\0004\0\0\0"..., 512) = 512
+lseek(4, 59652, SEEK_SET)               = 59652
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1520) = 1520
+lseek(4, 16684, SEEK_SET)               = 16684
+read(4, "A0\0\0\0aeabi\0\1&\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 49) = 49
+fstat64(4, {st_mode=S_IFREG|0755, st_size=61172, ...}) = 0
+mmap2(NULL, 82180, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb654b000
+mprotect(0xb654e000, 65536, PROT_NONE)  = 0
+mmap2(0xb655e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x3000) = 0xb655e000close(4)                                = 0
+open("/root/libhybris/libhybris/hybris/common/.libs/libgralloc.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/libgralloc.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/libgralloc.so.1", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\314\10\0\0004\0\0\0"..., 512) = 512
+lseek(4, 24992, SEEK_SET)               = 24992
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1400) = 1400
+lseek(4, 8340, SEEK_SET)                = 8340
+read(4, "A2\0\0\0aeabi\0\1(\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 51) = 51
+fstat64(4, {st_mode=S_IFREG|0755, st_size=26392, ...}) = 0
+mmap2(NULL, 73844, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6538000
+mprotect(0xb653a000, 61440, PROT_NONE)  = 0
+mmap2(0xb6549000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1000) = 0xb6549000close(4)                                = 0
+open("/root/libhybris/libhybris/hybris/common/.libs/libsync.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/root/libhybris/libhybris/hybris/egl/.libs/libsync.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/libsync.so.2", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\374\6\0\0004\0\0\0"..., 512) = 512
+lseek(4, 11344, SEEK_SET)               = 11344
+read(4, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1360) = 1360
+lseek(4, 4220, SEEK_SET)                = 4220
+read(4, "A0\0\0\0aeabi\0\1&\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\4\22"..., 49) = 49
+fstat64(4, {st_mode=S_IFREG|0755, st_size=12704, ...}) = 0
+mmap2(NULL, 69708, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb6526000
+mprotect(0xb6527000, 61440, PROT_NONE)  = 0
+mmap2(0xb6536000, 8192, PROT_R
